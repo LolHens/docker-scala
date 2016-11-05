@@ -9,7 +9,7 @@ ENV SCALA_URL http://downloads.lightbend.com/scala/$SCALA_VERSION/$SCALA_FILE
 
 
 RUN cd "/tmp" \
- && wget "$SCALA_URL" \
+ && curl -LO "$SCALA_URL" \
  && tar -zxf "$SCALA_FILE" \
  && mv "$SCALA_NAME" "/usr/share/scala/" \
  && ln -s /usr/share/scala/bin/scala /usr/bin/scala \
