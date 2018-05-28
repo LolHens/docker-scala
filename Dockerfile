@@ -2,7 +2,7 @@ FROM lolhens/baseimage-openjre:latest
 MAINTAINER LolHens <pierrekisters@gmail.com>
 
 
-ENV SCALA_VERSION 2.12.4
+ENV SCALA_VERSION 2.12.6
 ENV SCALA_NAME scala-$SCALA_VERSION
 ENV SCALA_FILE $SCALA_NAME.tgz
 ENV SCALA_URL http://downloads.lightbend.com/scala/$SCALA_VERSION/$SCALA_FILE
